@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – ASA Bridge Extensions</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #222;
+      line-height: 1.7;
+    }
+    h1 { font-size: 1.5em; }
+    h2 { font-size: 1.1em; margin-top: 2em; }
+    p, ul { margin: 0.5em 0; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy – ASA Bridge Extensions</h1>
+  <p><strong>Last updated: 2026-04-08</strong></p>
+
+  <p>
+    This privacy policy applies to the following Chrome extensions:
+  </p>
+  <ul>
+    <li>ASA Bridge for ChatGPT</li>
+    <li>ASA Bridge for Gemini</li>
+    <li>ASA Bridge for Claude</li>
+  </ul>
+
+  <h2>What data is accessed</h2>
+  <p>
+    Each extension reads the conversation content displayed on the respective
+    AI service page (ChatGPT, Gemini, or Claude) using standard browser APIs.
+    This data is used solely to relay conversation snapshots to the
+    companion desktop application (ASA) running on your local PC.
+  </p>
+
+  <h2>How data is used</h2>
+  <p>
+    The conversation data is sent exclusively to
+    <code>http://127.0.0.1</code> (localhost) — the same machine your
+    browser is running on. It is never transmitted to any external server,
+    third party, or cloud service.
+  </p>
+
+  <h2>Data storage</h2>
+  <p>
+    The extension does not store conversation data persistently. Data is
+    passed in memory to the local desktop application and is not retained
+    by the extension itself.
+  </p>
+
+  <h2>Permissions</h2>
+  <p>The extensions request the following permissions:</p>
+  <ul>
+    <li><strong>scripting</strong> – to read conversation content from the page</li>
+    <li><strong>tabs</strong> – to identify the active conversation tab</li>
+    <li><strong>storage</strong> – to store minimal operational state (e.g. connection settings) locally in the browser</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>
+    If you have questions about this policy, please open an issue on the
+    relevant GitHub repository.
+  </p>
+</body>
+</html>
